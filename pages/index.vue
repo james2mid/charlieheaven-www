@@ -1,53 +1,44 @@
 <template>
   <section class="section">
-    <div class="columns is-mobile">
-      <card
-        title="Free"
-        icon="github-circle"
-      >
-        Open source on <a href="https://github.com/buefy/buefy">
-          GitHub
-        </a>
-      </card>
-
-      <card
-        title="Responsive"
-        icon="cellphone-link"
-      >
-        <b class="has-text-grey">
-          Every
-        </b> component is responsive
-      </card>
-
-      <card
-        title="Modern"
-        icon="alert-decagram"
-      >
-        Built with <a href="https://vuejs.org/">
-          Vue.js
-        </a> and <a href="http://bulma.io/">
-          Bulma
-        </a>
-      </card>
-
-      <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
-      >
-        No other internal dependency
-      </card>
-    </div>
+    <CircleButton
+      color="rgba(100, 100, 100, 0.7)"
+      size="10vh"
+      x="10%"
+      y="62%"
+      @click="click"
+    />
   </section>
 </template>
 
 <script>
-import Card from '~/components/Card'
+import CircleButton from '@/components/CircleButton.vue'
 
 export default {
-  name: 'HomePage',
+  name: 'Home',
 
   components: {
-    Card
+    CircleButton
+  },
+
+  methods: {
+    click () {
+      window.alert('Hello')
+    }
   }
 }
 </script>
+
+<style>
+
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+  background-image: url(https://progameguides.com/wp-content/uploads/2018/05/fortnite-1920x1080-wallpaper-season10-004.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 0px 100px 0px rgba(0,0,0,1);
+}
+
+</style>
