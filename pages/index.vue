@@ -22,7 +22,7 @@ export default {
 
   methods: {
     click () {
-      window.alert('Hello')
+      window.alert('That tickles! 😂')
     }
   }
 }
