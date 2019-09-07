@@ -1,8 +1,8 @@
 {
   "name": "charlieheaven-www",
   "version": "1.0.0",
-  "description": "Charlie Heaven&#39;s website.",
-  "author": "Charlie Heaven",
+  "description": "Charlie Heaven's website.",
+  "author": "Charlie Heaven <charlieheaven09@gmail.com> (https://charlieheaven.com)",
   "private": true,
   "scripts": {
     "dev": "nuxt",
